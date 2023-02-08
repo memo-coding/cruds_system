@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUDS System</title>
+  <!--== Css File ==-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 id="clock"></h1>
+  <div class="container">
+    <div class="text-container">
+      <h2>Hello</h2>
+      <h2 id="date"></h2>
+    </div>
+    <div class="text-prodactat">
+      <input type="text" class="title" placeholder="title" spellcheck="true" maxlength="15"/>
+    </div>
+    <div class="price-taxes-ads-total">
+      <input class="price" type="number" placeholder="price" min="0" max="9000000"/>
+      <input class="taxes" type="number" placeholder="taxes" min="0" max="9000000"/>
+      <input class="ads" type="number" placeholder="ads" min="0" max="9000000"/>
+      <input class="discount" type="number" placeholder="discount" min="0" max="9000000"/>
+      <button class="total">total : <span class="totla-span"></span></button>
+    </div>
+    <div class="count-div">
+      <input type="number" placeholder="count" class="count" min="0" max="9000000"/>
+    </div>
+    <div class="category-div">
+      <input type="text" placeholder="category" class="category" spellcheck="true" maxlength="10"/>
+    </div>
+    <button class="creat">create</button>
+  </div>
+  <div class="search-container">
+    <input type="text" class="search" placeholder="search" spellcheck="true"/>
+    <div class="button-search">
+      <button onclick="getsearchmood(this.className)" class="search-title">
+        Search by title
+      </button>
+      <button onclick="getsearchmood(this.className)" class="search-categorey">
+        Search by categorey
+      </button>
+    </div>
+    <div class="add-delete-button">
+
+    </div>
+    <div class="table">
+      <table>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- == Javascript File == -->
+  <script src="main.js"></script>
+</body>
+
+</html>
